@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>123</h1>
+
+<hr>
+
+{% for i in b %}
+    {% if i > 1 %}
+        <h2>{{ i }}</h2>
+    {% else %}
+        <p>{{ i }}</p>
+    {% endif %}
+{% endfor %}
+
+{% endblock %}
